@@ -1,18 +1,18 @@
 body{
-    font-family: 'Smokum', sans-serif;
+    font-family: 'Poppins', sans-serif;
     max-width: 1280px; /*Usado para derfinir a largura maxima de um elemento html*/
     margin: 0 auto; /*Usado para deixar 0 de margem sup e inf e deixar dentralizado no meio da pagina*/
 }
 
 .conteudo{
-    background-color: beige;
     display: flex; /* deixa flexivel os elementos do container permitindo que seus filhos sejam organizados em columa ou em linha*/
     flex-direction: column; /*usado geralmente junto com diplay para definir direção do empilhamento, nesse caso no vertival (coluna)*/
     min-height: 100vh; /* garante que um elemento ocupe o espaço todo verticalmente*/
+    justify-content: space-evenly;
 }
 
 .conteudo .informacoes{
-    width: 55%; /*define a largura que vai usar do container nesse caso vai até 48% caso metade*/
+    width: 49%; /*define a largura que vai usar do container nesse caso vai até 49% uma pouco mais que a metade*/
     font-size: 24px;
     /* color: #ffffff; */
     line-height: 30px;
@@ -22,4 +22,69 @@ body{
     max-width: 350px;
     /* filter: invert(1) */
     margin-bottom: 80px; /*magim para baxio*/
+}
+
+.conteudo .botoes{
+    display: flex;
+    justify-content: center; /*usada para centralizar horizontalmente usada geralmente com dislay: flez;*/
+    gap: 20px; /*para defirini os espaço entre as celular*/
+}
+
+.conteudo .botao{
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-color: white;
+    cursor: pointer; /* quando passar o mouse em cima vira um pointer*/     
+}
+
+.conteudo .botao.selecionado{
+    background-color: tomato;
+}
+
+.menu-lateral{
+    position: fixed; /*usado para deixar um elemento fixo em relação a janela do navehador*/
+    filter: invert(1);
+    top: 0; /*distacia entre o topo da janela e o elemento posicioando*/
+    right: 0;/*distacia da borda deireita da janela e o elemento posicioando*/
+    width: 85px; /*largura*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;  
+    gap: 15px; 
+}
+
+.menu-lateral .icone{
+    width: 40px;
+    transition: 0.3s ease-in-out; /*deixa o transform mais devagar em 0.3s nesse caso*/
+}
+
+.menu-lateral .icone:hover{
+    transform: scale(1.2); /* aumenta a escala em (X) do icone*/
+}
+
+.carrossel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /*Deixar para tras do imagem "mover para tras"*/
+}
+
+.carrossel .imagem{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /*vai usar pra dimensionar altura e largura definida em cima (width e height)*/
+    display: none; /* tira o elemento da pagina*/
+}
+
+.carrossel .imagem.ativa{
+    display: block; /*vai deixar o elemento fixo*/
 }
