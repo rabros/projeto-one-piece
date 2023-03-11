@@ -1,0 +1,25 @@
+body{
+    font-family: 'Smokum', sans-serif;
+    max-width: 1280px; /*Usado para derfinir a largura maxima de um elemento html*/
+    margin: 0 auto; /*Usado para deixar 0 de margem sup e inf e deixar dentralizado no meio da pagina*/
+}
+
+.conteudo{
+    background-color: beige;
+    display: flex; /* deixa flexivel os elementos do container permitindo que seus filhos sejam organizados em columa ou em linha*/
+    flex-direction: column; /*usado geralmente junto com diplay para definir direção do empilhamento, nesse caso no vertival (coluna)*/
+    min-height: 100vh; /* garante que um elemento ocupe o espaço todo verticalmente*/
+}
+
+.conteudo .informacoes{
+    width: 55%; /*define a largura que vai usar do container nesse caso vai até 48% caso metade*/
+    font-size: 24px;
+    /* color: #ffffff; */
+    line-height: 30px;
+}
+
+.conteudo .logo{
+    max-width: 350px;
+    /* filter: invert(1) */
+    margin-bottom: 80px; /*magim para baxio*/
+}

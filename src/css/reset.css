@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none; /* saiu as "bolinha" da lista */
+}
+
+a{
+    text-decoration: none; /*resetar todas as decorações do textos */
+}
