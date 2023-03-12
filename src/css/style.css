@@ -4,6 +4,17 @@ body{
     margin: 0 auto; /*Usado para deixar 0 de margem sup e inf e deixar dentralizado no meio da pagina*/
 }
 
+main:after{ /*Serve para adicionar conteudo adicional apos o elelmento main */
+    content: "";
+    min-height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7587196264374122) 0%, rgba(0,0,0,0) 51%, rgba(0,0,0,0.8457982781228055) 100%);
+    z-index: -1;
+}
+
 .conteudo{
     display: flex; /* deixa flexivel os elementos do container permitindo que seus filhos sejam organizados em columa ou em linha*/
     flex-direction: column; /*usado geralmente junto com diplay para definir direção do empilhamento, nesse caso no vertival (coluna)*/
@@ -87,4 +98,13 @@ body{
 
 .carrossel .imagem.ativa{
     display: block; /*vai deixar o elemento fixo*/
+}
+
+@keyframes mudarImagem{ /*Serve para criar animação que muda progressivamente de um estilo ao longo do tempo */
+    front{
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+    }
 }
