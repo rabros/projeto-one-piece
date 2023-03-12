@@ -11,7 +11,7 @@ main:after{ /*Serve para adicionar conteudo adicional apos o elelmento main */
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.7587196264374122) 0%, rgba(0,0,0,0) 51%, rgba(0,0,0,0.8457982781228055) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7774462753467346) 21%, rgba(0,0,0,0) 53%, rgba(0,0,0,0.6510417809647121) 100%);
     z-index: -1;
 }
 
@@ -25,7 +25,8 @@ main:after{ /*Serve para adicionar conteudo adicional apos o elelmento main */
 .conteudo .informacoes{
     width: 49%; /*define a largura que vai usar do container nesse caso vai até 49% uma pouco mais que a metade*/
     font-size: 24px;
-    /* color: #ffffff; */
+    color: #ffffff;
+    /* font-weight: bold; */
     line-height: 30px;
 }
 
